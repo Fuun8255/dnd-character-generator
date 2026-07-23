@@ -114,7 +114,7 @@ async function initialiseGenerator() {
 
 async function loadCharacterOptions() {
     const response = await fetch(
-        "./data/character-options.json"
+        "./character-options.json"
     );
 
     if (!response.ok) {
