@@ -1,0 +1,1085 @@
+{
+    "species": [
+        "Aarakocra",
+        "Aasimar",
+        "Air Genasi",
+        "Astral Elf",
+        "Autognome",
+        "Boggart",
+        "Bugbear",
+        "Centaur",
+        "Changeling",
+        "Chromatic Dragonborn",
+        "Deep Gnome",
+        "Dhampir",
+        "Dragonborn",
+        "Dwarf",
+        "Earth Genasi",
+        "Eladrin",
+        "Elf",
+        "Faerie",
+        "Fairy",
+        "Feral Tiefling",
+        "Firbolg",
+        "Fire Genasi",
+        "Flamekin",
+        "Gem Dragonborn",
+        "Giff",
+        "Githyanki",
+        "Githzerai",
+        "Gnome",
+        "Goblin",
+        "Goliath",
+        "Grung",
+        "Hadozee",
+        "Halfling",
+        "Harengon",
+        "Half-Elf",
+        "Half-Orc",
+        "Hexblood",
+        "Hobgoblin",
+        "Human",
+        "Kalashtar",
+        "Kender",
+        "Kenku",
+        "Khoravar",
+        "Kithkin",
+        "Kobold",
+        "Leonin",
+        "Lizardfolk",
+        "Locathah",
+        "Lorwyn Changeling",
+        "Lorwyn-Shadowmoor Elf",
+        "Loxodon",
+        "Lupin",
+        "Metallic Dragonborn",
+        "Minotaur",
+        "Orc",
+        "Owlin",
+        "Plasmoid",
+        "Reborn",
+        "Rimekin",
+        "Satyr",
+        "Sea Elf",
+        "Shadar-kai",
+        "Shifter",
+        "Simic Hybrid",
+        "Tabaxi",
+        "Thri-kreen",
+        "Tiefling",
+        "Tortle",
+        "Triton",
+        "Verdan",
+        "Vedalken",
+        "Warforged",
+        "Water Genasi",
+        "Yuan-ti"
+    ],
+
+    "classes": [
+        "Barbarian",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Fighter",
+        "Monk",
+        "Paladin",
+        "Ranger",
+        "Rogue",
+        "Sorcerer",
+        "Warlock",
+        "Wizard",
+        "Artificer"
+    ],
+
+    "backgrounds": [
+    "Acolyte",
+    "Artisan",
+    "Charlatan",
+    "Criminal",
+    "Entertainer",
+    "Farmer",
+    "Guard",
+    "Guide",
+    "Hermit",
+    "Merchant",
+    "Noble",
+    "Sage",
+    "Sailor",
+    "Scribe",
+    "Soldier",
+    "Wayfarer",
+    "Aberrant Heir",
+    "Archaeologist",
+    "House Agent",
+    "House Cannith Heir",
+    "House Deneith Heir",
+    "House Ghallanda Heir",
+    "House Jorasco Heir",
+    "House Kundarak Heir",
+    "House Lyrandar Heir",
+    "House Medani Heir",
+    "House Orien Heir",
+    "House Phiarlan Heir",
+    "House Sivis Heir",
+    "House Tharashk Heir",
+    "House Thuranni Heir",
+    "House Vadalis Heir",
+    "Inquisitive",
+    "Chondathan Freebooter",
+    "Dead Magic Dweller",
+    "Dragon Cultist",
+    "Emerald Enclave Caretaker",
+    "Flaming Fist Mercenary",
+    "Genie Touched",
+    "Harper",
+    "Ice Fisher",
+    "Knight of the Gauntlet",
+    "Lords' Alliance Vassal",
+    "Moonwell Pilgrim",
+    "Mulhorandi Tomb Raider",
+    "Mythalkeeper",
+    "Purple Dragon Squire",
+    "Rashemi Wanderer",
+    "Shadowmasters Exile",
+    "Spellfire Initiate",
+    "Zhentarim Mercenary",
+    "Haunted One",
+    "Investigator",
+    "Mist Wanderer",
+    "Spirit Medium",
+    "Carouser",
+    "Vampire Devotee",
+    "Vampire Survivor",
+    "Lorwyn Expert",
+    "Shadowmoor Expert",
+    "Pact Seeker"
+    ],
+
+    "previousJobs": [
+        {
+        "text": "a traveling tattoo artist",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "a lighthouse keeper",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "a village baker",
+        "tones": ["whimsical", "heroic"]
+    },
+    {
+        "text": "a failed stage magician",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a court translator",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a graveyard caretaker",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a monster taxidermist",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a temple archivist",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a caravan guard",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "a professional mourner",
+        "tones": ["tragic", "strange"]
+    },
+    {
+        "text": "a royal food taster",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a keeper of carrier pigeons",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "an apprentice blacksmith",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a traveling puppeteer",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a battlefield medic",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a disgraced town guard",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "a sewer inspector",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "a royal beekeeper",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a crypt mapmaker",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a wandering storyteller",
+        "tones": ["whimsical", "heroic"]
+    },
+    {
+        "text": "a plague cart driver",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a village executioner",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a dragon stablehand",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "a collector of unpaid debts",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a haunted-house cleaner",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a monastery gardener",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "a shipwreck scavenger",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a traveling dentist",
+        "tones": ["whimsical", "dark"]
+    },
+    {
+        "text": "a royal body double",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "a failed monster hunter",
+        "tones": ["tragic", "heroic"]
+    },
+    {
+        "text": "a keeper of forbidden books",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a bridge toll collector",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "a traveling potion vendor",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a castle rat catcher",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "a battlefield standard-bearer",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a noble's secret courier",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a weather prophet",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "a village matchmaker",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a keeper of an abandoned shrine",
+        "tones": ["tragic", "strange"]
+    },
+    {
+        "text": "a professional duelist",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "a counterfeit relic maker",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a traveling candlemaker",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a royal astrologer",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "a mine rescue worker",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a cursed antiques dealer",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a festival mask maker",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a city watch investigator",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "a borderland shepherd",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a funeral bell ringer",
+        "tones": ["tragic", "dark"]
+    },
+    {
+        "text": "a traveling barber-surgeon",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "a royal jester's assistant",
+        "tones": ["whimsical", "tragic"]
+    },
+    {
+        "text": "a monster egg smuggler",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a keeper of the city gates",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a professional ghostwriter",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a deep-sea pearl diver",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a traveling fortune teller",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "an assistant to a mad alchemist",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "a royal portrait painter",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "a prison librarian",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a village fire warden",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "a collector of last words",
+        "tones": ["tragic", "strange"]
+    },
+    {
+        "text": "a traveling clock repairer",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a smuggler of banned songs",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "a royal monster groomer",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a keeper of battlefield records",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "a night-soil collector",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "a disgraced knight's squire",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a village midwife",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "a professional curse breaker",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "a caretaker for retired familiars",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a royal poison brewer",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a ferryman for a flooded cemetery",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a traveling map seller",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "a keeper of an enchanted maze",
+        "tones": ["strange", "heroic"]
+    },
+    {
+        "text": "a castle chimney sweep",
+        "tones": ["whimsical", "dark"]
+    },
+    {
+        "text": "a monster anatomy lecturer",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "a village well keeper",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "a failed revolutionary",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "a traveling cheese merchant",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "a keeper of royal secrets",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "a professional dragon impersonator",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a battlefield scavenger",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a messenger for the rebellion",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "a caretaker of a sleeping giant",
+        "tones": ["strange", "tragic"]
+    }
+    ],
+
+    "adventureReasons": [
+    {
+        "text": "to search for a missing family member",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "to break a curse placed upon their family",
+        "tones": ["dark", "heroic"]
+    },
+    {
+        "text": "after being framed for a crime they did not commit",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "after discovering evidence of an ancient conspiracy",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "to repay a debt that seems impossible to settle",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "to prove their former mentor wrong",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "to discover the origin of their unusual powers",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "because a recurring dream warned them of a disaster",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "to collect stories for an unfinished book",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "after accidentally releasing something dangerous",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "to recover an heirloom stolen from their home",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "because they lost a bet with a suspiciously intelligent goat",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "to find the person who saved their life years ago",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "to earn enough money to rebuild their village",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "after receiving a map addressed to someone who died centuries ago",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "to hunt the creature that destroyed their former adventuring party",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "because their hometown became trapped in a repeating day",
+        "tones": ["strange", "tragic"]
+    },
+    {
+        "text": "to become famous enough that their estranged family hears of them",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "to locate a legendary cure for an incurable illness",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "after inheriting a key that opens an unknown door",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "to return a stolen relic before its absence is discovered",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "because their quiet retirement was becoming unbearably dull",
+        "tones": ["whimsical", "heroic"]
+    },
+    {
+        "text": "to prove that a supposedly mythical creature is real",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "after their shadow began pointing toward the same distant place",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "to fulfill the final request of a fallen companion",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "because they believe the world is ending and nobody else has noticed",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "to win a royal pardon through acts of heroism",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "after accidentally being declared the champion of a minor deity",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "to locate the owner of a sword that refuses to leave them alone",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "because a fortune teller predicted they would die peacefully at home",
+        "tones": ["whimsical", "dark"]
+    },
+    {
+        "text": "to expose the noble responsible for their community's suffering",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "after waking inside a ruined temple with no memory of arriving",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "to retrieve a loved one's soul from an unknown afterlife",
+        "tones": ["tragic", "heroic"]
+    },
+    {
+        "text": "because they promised a child they would defeat a nearby monster",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "to document every monster before someone else names them badly",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "after discovering that their childhood imaginary friend was real",
+        "tones": ["strange", "whimsical"]
+    }
+],
+
+"definingMarks": [
+    {
+        "text": "an intricate magical prosthetic in place of their left arm",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "eyes that change colour whenever they lie",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "a constellation-shaped birthmark across their face",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "skin covered in unfinished magical tattoos",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "a broken horn repaired with gold",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "a shadow that moves slightly slower than they do",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "an old bite scar circling their throat",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "hair that turns white near powerful magic",
+        "tones": ["strange", "heroic"]
+    },
+    {
+        "text": "fingertips permanently stained with blue ink",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "small flowers that grow from their scars",
+        "tones": ["whimsical", "tragic"]
+    },
+    {
+        "text": "a reflection that always looks exhausted",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a tiny spectral bird that constantly sits on their shoulder",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a long scar that glows faintly beneath moonlight",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "one eye replaced with a polished gemstone",
+        "tones": ["heroic", "strange"]
+    },
+    {
+        "text": "teeth sharpened by an old magical accident",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a halo that appears only when they are embarrassed",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "burn scars shaped like grasping hands",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a missing ear replaced with a delicately carved wooden one",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "veins that glow whenever they cast magic",
+        "tones": ["strange", "heroic"]
+    },
+    {
+        "text": "a tattoo that changes to depict their most recent dream",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "a permanent handprint burned into their shoulder",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a crown-shaped scar hidden beneath their hair",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "one hand that is always noticeably colder than the other",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "freckles that resemble tiny written runes",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a voice that produces a faint echo even in open spaces",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "a clockwork heart audible in quiet rooms",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "a patch of scales that spreads slightly after every battle",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "an old executioner's brand across their palm",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "hair that constantly drifts as though underwater",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "a nose broken so many times that it points slightly sideways",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "a scar across their chest repaired with silver thread",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "eyes that briefly reflect places they have never visited",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "a spectral chain wrapped around one wrist",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "a perfectly straight line of white hair caused by lightning",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "a second shadow shaped like a much larger creature",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "a permanent scent of rain and old parchment",
+        "tones": ["whimsical", "serious"]
+    }
+],
+
+"personalityTraits": [
+    {
+        "text": "patient with monsters but impatient with people",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "determined to treat every problem like a business negotiation",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "constantly taking notes about everyone they meet",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "likely to act fearless whenever they are terrified",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "intensely curious and burdened with poor survival instincts",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "incapable of abandoning a promise",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "obsessed with collecting useless objects",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "unfailingly polite, even while threatening someone",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "distrustful of authority but desperate for approval",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "convinced that every stranger deserves one chance",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "unable to resist correcting inaccurate maps",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "always prepared for the wrong emergency",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "quick to forgive others but incapable of forgiving themselves",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "convinced that every locked door hides something important",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "calm during disasters and anxious during peaceful moments",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "determined to give every weapon they own a proper name",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "fond of delivering dramatic speeches to completely empty rooms",
+        "tones": ["whimsical", "heroic"]
+    },
+    {
+        "text": "unable to accept help without immediately returning the favour",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "deeply superstitious but unwilling to admit it",
+        "tones": ["strange", "serious"]
+    },
+    {
+        "text": "likely to laugh whenever a situation becomes dangerous",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "protective of anyone who reminds them of their younger self",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "constantly inventing elaborate explanations for simple mistakes",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "more comfortable speaking to ghosts than living people",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "determined to leave every place slightly better than they found it",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "inclined to assume every prophecy is secretly about them",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "terrified of being forgotten and obsessed with making a legacy",
+        "tones": ["heroic", "tragic"]
+    },
+    {
+        "text": "incapable of resisting a challenge issued in public",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "soft-spoken until someone threatens their companions",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "convinced that kindness is a limited resource that must be rationed",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "likely to adopt every stray animal they encounter",
+        "tones": ["whimsical", "heroic"]
+    },
+    {
+        "text": "obsessed with maintaining an unnecessarily mysterious reputation",
+        "tones": ["dark", "whimsical"]
+    },
+    {
+        "text": "unable to sleep without checking every exit twice",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "treats ancient evils with the same irritation as household pests",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "believes that every problem can be solved with enough preparation",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "keeps emotional distance by turning everything into a joke",
+        "tones": ["whimsical", "tragic"]
+    },
+    {
+        "text": "always volunteers for dangerous tasks before considering the consequences",
+        "tones": ["heroic", "serious"]
+    }
+],
+
+"secrets": [
+    {
+        "text": "they cannot read despite pretending to be highly educated",
+        "tones": ["whimsical", "tragic"]
+    },
+    {
+        "text": "their former employer is still searching for them",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "they remember a town that has never existed",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "their powers disappear whenever nobody is watching",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "they made a bargain but cannot remember the price",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "they are using someone else's name",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "they caused the event that destroyed their home",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "they receive letters written in their own handwriting",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "they have already met their greatest future enemy",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "they are slowly turning into something unknown",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "they are being followed by a very determined duck",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "they are secretly far wealthier than they pretend",
+        "tones": ["whimsical", "serious"]
+    },
+    {
+        "text": "they once served the villain they now claim to oppose",
+        "tones": ["dark", "serious"]
+    },
+    {
+        "text": "their reflection occasionally acts without them",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "they possess a royal title that officially belongs to someone else",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "they know the location of a treasure everyone believes was destroyed",
+        "tones": ["serious", "heroic"]
+    },
+    {
+        "text": "they died once and have no idea why they returned",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "the monster hunting them is actually trying to protect them",
+        "tones": ["strange", "tragic"]
+    },
+    {
+        "text": "they regularly speak with someone nobody else can see",
+        "tones": ["strange", "dark"]
+    },
+    {
+        "text": "they stole their signature weapon from a legendary hero",
+        "tones": ["heroic", "serious"]
+    },
+    {
+        "text": "their most impressive heroic deed was a complete accident",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "they have been quietly sending money to an enemy's family",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "they are carrying an egg belonging to an unknown creature",
+        "tones": ["strange", "whimsical"]
+    },
+    {
+        "text": "they hear a distant bell whenever someone nearby is about to die",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "they forged the prophecy that sent them on their quest",
+        "tones": ["serious", "whimsical"]
+    },
+    {
+        "text": "they are secretly responsible for their own curse",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "their imaginary childhood companion has recently returned",
+        "tones": ["strange", "tragic"]
+    },
+    {
+        "text": "they carry a sealed letter they have been forbidden to open",
+        "tones": ["serious", "strange"]
+    },
+    {
+        "text": "they are the rightful heir to a ruined and deeply inconvenient kingdom",
+        "tones": ["heroic", "whimsical"]
+    },
+    {
+        "text": "they can understand animals but pretend they cannot",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "they betrayed someone who still believes them to be loyal",
+        "tones": ["dark", "tragic"]
+    },
+    {
+        "text": "they know that one of their companions is living under a false identity",
+        "tones": ["serious", "dark"]
+    },
+    {
+        "text": "they have been dreaming memories belonging to their enemy",
+        "tones": ["dark", "strange"]
+    },
+    {
+        "text": "they accidentally became engaged to a minor fey noble",
+        "tones": ["whimsical", "strange"]
+    },
+    {
+        "text": "their family believes they died several years ago",
+        "tones": ["serious", "tragic"]
+    },
+    {
+        "text": "they know the supposed ancient prophecy was written last year",
+        "tones": ["whimsical", "serious"]
+    }
+]
+}

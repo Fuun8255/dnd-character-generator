@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Generate random D&D character concepts."
+    >
+
+    <title>D&D Character Idea Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="generator">
+        <header class="page-header">
+            <p class="eyebrow">D&D 5.5e</p>
+
+            <h1>Character Idea Generator</h1>
+
+            <p class="introduction">
+                Generate a character concept, lock the parts you like,
+                and reroll the rest.
+            </p>
+        </header>
+
+        <section class="generator-controls">
+            <label class="tone-control" for="tone-select">
+                <span>Character tone</span>
+
+                <select id="tone-select">
+                    <option value="any">Any tone</option>
+                    <option value="serious">Serious</option>
+                    <option value="heroic">Heroic</option>
+                    <option value="dark">Dark</option>
+                    <option value="strange">Strange</option>
+                    <option value="whimsical">Whimsical</option>
+                    <option value="tragic">Tragic</option>
+                </select>
+            </label>
+
+            <button
+                id="generate-button"
+                class="primary-button"
+                type="button"
+            >
+                Generate Character
+            </button>
+
+            <div class="secondary-controls">
+                <button
+                    id="unlock-all-button"
+                    class="secondary-button"
+                    type="button"
+                >
+                    Unlock All
+                </button>
+
+                <button
+                    id="reset-button"
+                    class="secondary-button danger-button"
+                    type="button"
+                >
+                    Reset Everything
+                </button>
+            </div>
+        </section>
+
+        <section
+            id="character-result"
+            class="character-card"
+            aria-live="polite"
+        >
+            <p class="placeholder">
+                Loading character options...
+            </p>
+        </section>
+
+        <section class="summary-card">
+            <div class="summary-header">
+                <h2>Character Concept</h2>
+
+                <button
+                    id="copy-button"
+                    class="secondary-button"
+                    type="button"
+                >
+                    Copy Character
+                </button>
+            </div>
+
+            <p id="summary-text" class="summary-text">
+                Generate a character to create a combined description.
+            </p>
+        </section>
+
+        <p
+            id="status-message"
+            class="status-message"
+            role="status"
+            aria-live="polite"
+        ></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
