@@ -291,6 +291,7 @@
         "Shadowmoor Expert",
         "Pact Seeker"
     ],
+    
     "previousJobs": [
         {
             "text": "a traveling tattoo artist",
@@ -3043,6 +3044,7 @@
             ]
         }
     ],
+    
     "secrets": [
         {
             "text": "they cannot read despite pretending to be highly educated",
@@ -3641,10 +3643,7 @@
         },
         {
             "text": "the deity guiding them is an impostor",
-            "tones": [
-                "dark",
-                "strange"
-            ]
+            "tones": [ "dark",   "strange" ]
         }
     ]
 }
