@@ -10,7 +10,7 @@
 
     <meta
         name="description"
-        content="Generate random D&D character concepts."
+        content="Generate random D&D 5.5e character concepts with locks, rerolls, weighting, and optional appearance details."
     >
 
     <title>D&D Character Idea Generator</title>
@@ -27,24 +27,41 @@
 
             <p class="introduction">
                 Generate a character concept, lock the parts you like,
-                and reroll the rest.
+                reroll the rest, and hide anything you do not want included.
             </p>
         </header>
 
-        <section class="generator-controls">
-            <label class="tone-control" for="tone-select">
-                <span>Character tone</span>
+        <section class="generator-controls" aria-label="Generator settings">
+            <div class="control-grid">
+                <label class="select-control" for="tone-select">
+                    <span>Character tone</span>
 
-                <select id="tone-select">
-                    <option value="any">Any tone</option>
-                    <option value="serious">Serious</option>
-                    <option value="heroic">Heroic</option>
-                    <option value="dark">Dark</option>
-                    <option value="strange">Strange</option>
-                    <option value="whimsical">Whimsical</option>
-                    <option value="tragic">Tragic</option>
-                </select>
-            </label>
+                    <select id="tone-select">
+                        <option value="any">Any tone</option>
+                        <option value="serious">Serious</option>
+                        <option value="heroic">Heroic</option>
+                        <option value="dark">Dark</option>
+                        <option value="strange">Strange</option>
+                        <option value="whimsical">Whimsical</option>
+                        <option value="tragic">Tragic</option>
+                    </select>
+                </label>
+
+                <label class="select-control" for="weighting-select">
+                    <span>Background logic</span>
+
+                    <select id="weighting-select">
+                        <option value="full">Makes sense</option>
+                        <option value="half" selected>Kinda makes sense</option>
+                        <option value="random">Totally random</option>
+                    </select>
+                </label>
+            </div>
+
+            <p class="control-note">
+                Background logic only changes how strongly class-friendly
+                backgrounds are favoured. Every background remains possible.
+            </p>
 
             <button
                 id="generate-button"

@@ -291,7 +291,6 @@
         "Shadowmoor Expert",
         "Pact Seeker"
     ],
-    
     "previousJobs": [
         {
             "text": "a traveling tattoo artist",
@@ -3044,7 +3043,6 @@
             ]
         }
     ],
-    
     "secrets": [
         {
             "text": "they cannot read despite pretending to be highly educated",
@@ -3643,7 +3641,698 @@
         },
         {
             "text": "the deity guiding them is an impostor",
-            "tones": [ "dark",   "strange" ]
+            "tones": [
+                "dark",
+                "strange"
+            ]
         }
-    ]
+    ],
+    "backgroundAbilityScores": {
+        "Acolyte": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Artisan": [
+            "Strength",
+            "Dexterity",
+            "Intelligence"
+        ],
+        "Charlatan": [
+            "Dexterity",
+            "Constitution",
+            "Charisma"
+        ],
+        "Criminal": [
+            "Dexterity",
+            "Constitution",
+            "Intelligence"
+        ],
+        "Entertainer": [
+            "Strength",
+            "Dexterity",
+            "Charisma"
+        ],
+        "Farmer": [
+            "Strength",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Guard": [
+            "Strength",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Guide": [
+            "Dexterity",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Hermit": [
+            "Constitution",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Merchant": [
+            "Constitution",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Noble": [
+            "Strength",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Sage": [
+            "Constitution",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Sailor": [
+            "Strength",
+            "Dexterity",
+            "Wisdom"
+        ],
+        "Scribe": [
+            "Dexterity",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Soldier": [
+            "Strength",
+            "Dexterity",
+            "Constitution"
+        ],
+        "Wayfarer": [
+            "Dexterity",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Aberrant Heir": [
+            "Strength",
+            "Constitution",
+            "Charisma"
+        ],
+        "Archaeologist": [
+            "Dexterity",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "House Agent": [
+            "Strength",
+            "Intelligence",
+            "Charisma"
+        ],
+        "House Cannith Heir": [
+            "Strength",
+            "Dexterity",
+            "Intelligence"
+        ],
+        "House Deneith Heir": [
+            "Strength",
+            "Constitution",
+            "Wisdom"
+        ],
+        "House Ghallanda Heir": [
+            "Dexterity",
+            "Wisdom",
+            "Charisma"
+        ],
+        "House Jorasco Heir": [
+            "Dexterity",
+            "Constitution",
+            "Wisdom"
+        ],
+        "House Kundarak Heir": [
+            "Strength",
+            "Constitution",
+            "Intelligence"
+        ],
+        "House Lyrandar Heir": [
+            "Strength",
+            "Dexterity",
+            "Charisma"
+        ],
+        "House Medani Heir": [
+            "Dexterity",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "House Orien Heir": [
+            "Dexterity",
+            "Constitution",
+            "Intelligence"
+        ],
+        "House Phiarlan Heir": [
+            "Dexterity",
+            "Wisdom",
+            "Charisma"
+        ],
+        "House Sivis Heir": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+        ],
+        "House Tharashk Heir": [
+            "Constitution",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "House Thuranni Heir": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "House Vadalis Heir": [
+            "Constitution",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Inquisitive": [
+            "Constitution",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Chondathan Freebooter": [
+            "Strength",
+            "Dexterity",
+            "Wisdom"
+        ],
+        "Dead Magic Dweller": [
+            "Strength",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Dragon Cultist": [
+            "Dexterity",
+            "Constitution",
+            "Intelligence"
+        ],
+        "Emerald Enclave Caretaker": [
+            "Constitution",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Flaming Fist Mercenary": [
+            "Strength",
+            "Constitution",
+            "Charisma"
+        ],
+        "Genie Touched": [
+            "Dexterity",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Harper": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Ice Fisher": [
+            "Strength",
+            "Dexterity",
+            "Constitution"
+        ],
+        "Knight of the Gauntlet": [
+            "Strength",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Lords' Alliance Vassal": [
+            "Strength",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Moonwell Pilgrim": [
+            "Constitution",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Mulhorandi Tomb Raider": [
+            "Dexterity",
+            "Constitution",
+            "Intelligence"
+        ],
+        "Mythalkeeper": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Purple Dragon Squire": [
+            "Strength",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Rashemi Wanderer": [
+            "Strength",
+            "Constitution",
+            "Charisma"
+        ],
+        "Shadowmasters Exile": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Spellfire Initiate": [
+            "Constitution",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Zhentarim Mercenary": [
+            "Strength",
+            "Dexterity",
+            "Charisma"
+        ],
+        "Haunted One": [
+            "Constitution",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Investigator": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Mist Wanderer": [
+            "Dexterity",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Spirit Medium": [
+            "Constitution",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Carouser": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Vampire Devotee": [
+            "Strength",
+            "Constitution",
+            "Charisma"
+        ],
+        "Vampire Survivor": [
+            "Dexterity",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Lorwyn Expert": [
+            "Strength",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Shadowmoor Expert": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Pact Seeker": [
+            "Constitution",
+            "Intelligence",
+            "Charisma"
+        ]
+    },
+    "classAbilityWeights": {
+        "Artificer": {
+            "Intelligence": 8,
+            "Constitution": 5,
+            "Dexterity": 3,
+            "Wisdom": 2
+        },
+        "Barbarian": {
+            "Strength": 8,
+            "Constitution": 5,
+            "Dexterity": 3
+        },
+        "Bard": {
+            "Charisma": 8,
+            "Dexterity": 5,
+            "Constitution": 3,
+            "Intelligence": 2
+        },
+        "Cleric": {
+            "Wisdom": 8,
+            "Constitution": 5,
+            "Strength": 3,
+            "Charisma": 2
+        },
+        "Druid": {
+            "Wisdom": 8,
+            "Constitution": 5,
+            "Dexterity": 3,
+            "Intelligence": 2
+        },
+        "Fighter": {
+            "Strength": 7,
+            "Dexterity": 7,
+            "Constitution": 5,
+            "Wisdom": 2
+        },
+        "Monk": {
+            "Dexterity": 8,
+            "Wisdom": 7,
+            "Constitution": 3,
+            "Strength": 2
+        },
+        "Paladin": {
+            "Strength": 7,
+            "Charisma": 7,
+            "Constitution": 4,
+            "Wisdom": 2
+        },
+        "Ranger": {
+            "Dexterity": 7,
+            "Wisdom": 7,
+            "Constitution": 4,
+            "Strength": 2
+        },
+        "Rogue": {
+            "Dexterity": 8,
+            "Intelligence": 4,
+            "Charisma": 3,
+            "Constitution": 3
+        },
+        "Sorcerer": {
+            "Charisma": 8,
+            "Constitution": 5,
+            "Dexterity": 3,
+            "Wisdom": 2
+        },
+        "Warlock": {
+            "Charisma": 8,
+            "Constitution": 5,
+            "Dexterity": 3,
+            "Intelligence": 2
+        },
+        "Wizard": {
+            "Intelligence": 8,
+            "Constitution": 5,
+            "Dexterity": 3,
+            "Wisdom": 2
+        }
+    },
+    "appearanceOptions": {
+        "heightProfiles": [
+            {
+                "contains": [
+                    "Goliath"
+                ],
+                "minCm": 205,
+                "maxCm": 250
+            },
+            {
+                "contains": [
+                    "Firbolg"
+                ],
+                "minCm": 190,
+                "maxCm": 230
+            },
+            {
+                "contains": [
+                    "Loxodon"
+                ],
+                "minCm": 185,
+                "maxCm": 225
+            },
+            {
+                "contains": [
+                    "Minotaur"
+                ],
+                "minCm": 180,
+                "maxCm": 220
+            },
+            {
+                "contains": [
+                    "Bugbear"
+                ],
+                "minCm": 180,
+                "maxCm": 220
+            },
+            {
+                "contains": [
+                    "Dragonborn"
+                ],
+                "minCm": 175,
+                "maxCm": 220
+            },
+            {
+                "contains": [
+                    "Orc",
+                    "Half-Orc"
+                ],
+                "minCm": 165,
+                "maxCm": 215
+            },
+            {
+                "contains": [
+                    "Centaur"
+                ],
+                "minCm": 180,
+                "maxCm": 220
+            },
+            {
+                "contains": [
+                    "Thri-kreen"
+                ],
+                "minCm": 150,
+                "maxCm": 210
+            },
+            {
+                "contains": [
+                    "Dwarf",
+                    "Duergar"
+                ],
+                "minCm": 120,
+                "maxCm": 155
+            },
+            {
+                "contains": [
+                    "Gnome",
+                    "Autognome"
+                ],
+                "minCm": 90,
+                "maxCm": 125
+            },
+            {
+                "contains": [
+                    "Halfling",
+                    "Kender"
+                ],
+                "minCm": 85,
+                "maxCm": 120
+            },
+            {
+                "contains": [
+                    "Goblin",
+                    "Kobold",
+                    "Grung"
+                ],
+                "minCm": 85,
+                "maxCm": 125
+            },
+            {
+                "contains": [
+                    "Fairy",
+                    "Faerie"
+                ],
+                "minCm": 75,
+                "maxCm": 120
+            },
+            {
+                "contains": [
+                    "Tortle"
+                ],
+                "minCm": 145,
+                "maxCm": 185
+            },
+            {
+                "contains": [
+                    "Plasmoid"
+                ],
+                "minCm": 120,
+                "maxCm": 205
+            }
+        ],
+        "builds": [
+            "very slender",
+            "slender",
+            "lithe",
+            "lean",
+            "average",
+            "athletic",
+            "toned",
+            "broad",
+            "stocky",
+            "heavyset",
+            "muscular",
+            "wiry"
+        ],
+        "skinColors": [
+            "very light",
+            "light",
+            "warm beige",
+            "golden tan",
+            "olive",
+            "copper-brown",
+            "warm brown",
+            "deep brown",
+            "dark brown"
+        ],
+        "fantasySkinColors": [
+            "very light",
+            "golden tan",
+            "olive",
+            "warm brown",
+            "deep brown",
+            "ash gray",
+            "slate gray",
+            "crimson",
+            "burgundy",
+            "violet",
+            "lavender",
+            "deep blue",
+            "sea green",
+            "copper",
+            "pale gold"
+        ],
+        "scaleColors": [
+            "black",
+            "charcoal",
+            "blue",
+            "deep green",
+            "moss green",
+            "red",
+            "rust red",
+            "bronze",
+            "brass",
+            "copper",
+            "gold",
+            "silver",
+            "ivory",
+            "sand-coloured",
+            "mottled brown",
+            "iridescent"
+        ],
+        "furColors": [
+            "black",
+            "charcoal",
+            "gray",
+            "silver-gray",
+            "brown",
+            "dark brown",
+            "red-brown",
+            "golden",
+            "cream",
+            "white",
+            "spotted",
+            "striped"
+        ],
+        "featherColors": [
+            "black",
+            "charcoal",
+            "gray",
+            "brown",
+            "rust-red",
+            "golden-brown",
+            "cream",
+            "white",
+            "blue-gray",
+            "mottled",
+            "iridescent"
+        ],
+        "carapaceColors": [
+            "sandy brown",
+            "dark brown",
+            "ochre",
+            "rust-red",
+            "olive green",
+            "moss green",
+            "charcoal",
+            "black",
+            "pale gray",
+            "mottled tan"
+        ],
+        "constructFinishes": [
+            "brushed steel and dark wood",
+            "polished brass and oak",
+            "blackened iron and walnut",
+            "copper plates and pale wood",
+            "weathered steel and cedar",
+            "silvered metal and ebony",
+            "painted ceramic and brass",
+            "scratched iron and dark leather"
+        ],
+        "oozeColors": [
+            "translucent blue",
+            "translucent green",
+            "amber",
+            "violet",
+            "smoky gray",
+            "milky white",
+            "rose-pink",
+            "clear with silver flecks",
+            "deep teal"
+        ],
+        "eyeColors": [
+            "dark brown",
+            "brown",
+            "hazel",
+            "amber",
+            "green",
+            "blue",
+            "gray",
+            "blue-gray"
+        ],
+        "unusualEyeColors": [
+            "gold",
+            "silver",
+            "bright amber",
+            "crimson",
+            "violet",
+            "electric blue",
+            "emerald green",
+            "solid black",
+            "milky white",
+            "copper",
+            "opal-like",
+            "pale luminous blue"
+        ],
+        "hairColors": [
+            "black",
+            "dark brown",
+            "brown",
+            "light brown",
+            "auburn",
+            "red",
+            "copper",
+            "dark blond",
+            "blond",
+            "platinum blond",
+            "gray",
+            "silver",
+            "white"
+        ],
+        "hairStyles": [
+            "closely cropped",
+            "shaved at the sides",
+            "short and messy",
+            "short and carefully styled",
+            "chin-length and straight",
+            "shoulder-length and loose",
+            "long and straight",
+            "long and wavy",
+            "curly and unruly",
+            "tied in a low ponytail",
+            "tied in a high ponytail",
+            "worn in a single braid",
+            "worn in several braids",
+            "worn in thick locks",
+            "pulled into a practical bun",
+            "elaborately styled",
+            "partly shaved with a long top",
+            "wild and untrimmed"
+        ]
+    }
 }
