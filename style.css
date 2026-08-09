@@ -525,3 +525,235 @@ h1 {
         width: 100%;
     }
 }
+
+.select-options-button.has-selection {
+    color: #211825;
+    background-color: #d3ae70;
+    border-color: #d3ae70;
+}
+
+.select-options-button.has-selection:hover:not(:disabled) {
+    background-color: #e0bd82;
+    border-color: #e0bd82;
+}
+
+.option-selector-dialog {
+    width: min(92vw, 760px);
+    max-height: min(86vh, 820px);
+    padding: 0;
+
+    color: #f5efe4;
+    background-color: #18131e;
+
+    border: 1px solid #8c7151;
+    border-radius: 16px;
+
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+}
+
+.option-selector-dialog::backdrop {
+    background: rgba(10, 8, 13, 0.72);
+    backdrop-filter: blur(3px);
+}
+
+.option-selector-panel {
+    display: grid;
+    grid-template-rows: auto auto auto auto minmax(160px, 1fr) auto;
+    max-height: min(86vh, 820px);
+    overflow: hidden;
+}
+
+.option-selector-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1.25rem 1.25rem 0.8rem;
+}
+
+.option-selector-header h2 {
+    margin: 0.25rem 0 0;
+    color: #d3ae70;
+    font-size: 1.35rem;
+}
+
+.option-selector-eyebrow {
+    margin: 0;
+    color: #a99daf;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
+
+.option-selector-close {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+
+    color: #d8ccd9;
+    background-color: #292130;
+    border: 1px solid #5b4965;
+    border-radius: 8px;
+
+    font-size: 1.45rem;
+    line-height: 1;
+}
+
+.option-selector-close:hover {
+    color: #211825;
+    background-color: #d3ae70;
+    border-color: #d3ae70;
+}
+
+.option-selector-help,
+.option-selector-status {
+    margin: 0;
+    padding-inline: 1.25rem;
+    color: #b9aebf;
+    line-height: 1.5;
+}
+
+.option-selector-help {
+    padding-bottom: 1rem;
+}
+
+.option-selector-toolbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.8rem;
+    align-items: end;
+
+    padding: 0 1.25rem 1rem;
+}
+
+.option-selector-search-label {
+    display: grid;
+    gap: 0.4rem;
+
+    color: #d8ccd9;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.option-selector-search {
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+
+    color: #f5efe4;
+    background-color: #120f17;
+
+    border: 1px solid #5b4965;
+    border-radius: 9px;
+
+    font: inherit;
+}
+
+.option-selector-search:focus-visible {
+    outline: 3px solid rgba(211, 174, 112, 0.45);
+    outline-offset: 2px;
+}
+
+.option-selector-toolbar-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.option-selector-toolbar-actions .secondary-button {
+    white-space: nowrap;
+}
+
+.option-selector-status {
+    min-height: 1.5rem;
+    padding-bottom: 0.75rem;
+    color: #d3ae70;
+    font-size: 0.86rem;
+}
+
+.option-selector-list {
+    display: grid;
+    gap: 0.45rem;
+
+    margin: 0 1.25rem;
+    padding: 0.35rem 0.4rem 0.35rem 0;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.option-selector-item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+
+    padding: 0.72rem 0.8rem;
+
+    color: #ede3ef;
+    background-color: rgba(45, 36, 52, 0.55);
+
+    border: 1px solid #3c3045;
+    border-radius: 9px;
+
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.option-selector-item:hover {
+    border-color: #6d5877;
+    background-color: rgba(64, 50, 73, 0.72);
+}
+
+.option-selector-item input {
+    width: 1.05rem;
+    height: 1.05rem;
+    margin: 0.15rem 0 0;
+    accent-color: #d3ae70;
+}
+
+.option-selector-empty {
+    margin: 0;
+    padding: 1.5rem;
+    color: #a99daf;
+    text-align: center;
+}
+
+.option-selector-footer {
+    display: grid;
+    grid-template-columns: minmax(120px, 0.45fr) minmax(180px, 1fr);
+    gap: 0.75rem;
+
+    padding: 1rem 1.25rem 1.25rem;
+
+    background-color: #18131e;
+    border-top: 1px solid #352b3d;
+}
+
+.option-selector-apply {
+    width: 100%;
+}
+
+@media (max-width: 620px) {
+    .option-selector-dialog {
+        width: min(96vw, 760px);
+        max-height: 90vh;
+    }
+
+    .option-selector-panel {
+        max-height: 90vh;
+    }
+
+    .option-selector-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .option-selector-toolbar-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .option-selector-footer {
+        grid-template-columns: 1fr;
+    }
+}

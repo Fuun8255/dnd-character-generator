@@ -126,6 +126,97 @@
         ></p>
     </main>
 
+
+
+    <dialog
+        id="option-selector-dialog"
+        class="option-selector-dialog"
+        aria-labelledby="option-selector-title"
+    >
+        <form method="dialog" class="option-selector-panel">
+            <div class="option-selector-header">
+                <div>
+                    <p class="option-selector-eyebrow">Allowed results</p>
+                    <h2 id="option-selector-title">Select options</h2>
+                </div>
+
+                <button
+                    class="option-selector-close"
+                    type="submit"
+                    value="cancel"
+                    aria-label="Close option selector"
+                >
+                    ×
+                </button>
+            </div>
+
+            <p class="option-selector-help">
+                Check the options this field is allowed to roll.
+                Leaving everything unchecked means all options remain available.
+            </p>
+
+            <div class="option-selector-toolbar">
+                <label class="option-selector-search-label" for="option-selector-search">
+                    <span>Search options</span>
+                    <input
+                        id="option-selector-search"
+                        class="option-selector-search"
+                        type="search"
+                        autocomplete="off"
+                        placeholder="Type to filter the list..."
+                    >
+                </label>
+
+                <div class="option-selector-toolbar-actions">
+                    <button
+                        id="option-selector-check-all"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Check Visible
+                    </button>
+
+                    <button
+                        id="option-selector-clear"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Clear Visible
+                    </button>
+                </div>
+            </div>
+
+            <p
+                id="option-selector-status"
+                class="option-selector-status"
+                aria-live="polite"
+            ></p>
+
+            <div
+                id="option-selector-list"
+                class="option-selector-list"
+            ></div>
+
+            <div class="option-selector-footer">
+                <button
+                    class="secondary-button"
+                    type="submit"
+                    value="cancel"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    id="option-selector-apply"
+                    class="primary-button option-selector-apply"
+                    type="button"
+                >
+                    Apply Selection
+                </button>
+            </div>
+        </form>
+    </dialog>
+
     <script src="script.js"></script>
 </body>
 </html>

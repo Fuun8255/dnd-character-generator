@@ -130,6 +130,9 @@ let selectedTone = "any";
 let selectedWeighting = "half";
 let enabledSections = createDefaultSectionState();
 let enabledFields = createDefaultFieldState();
+let selectedOptionPools = createDefaultOptionPoolState();
+let activeSelectorFieldKey = null;
+let selectorDraftSelections = new Set();
 let statusTimeoutId = null;
 
 const resultElement = document.getElementById("character-result");
@@ -141,6 +144,14 @@ const resetButton = document.getElementById("reset-button");
 const copyButton = document.getElementById("copy-button");
 const toneSelect = document.getElementById("tone-select");
 const weightingSelect = document.getElementById("weighting-select");
+const optionSelectorDialog = document.getElementById("option-selector-dialog");
+const optionSelectorTitle = document.getElementById("option-selector-title");
+const optionSelectorSearch = document.getElementById("option-selector-search");
+const optionSelectorList = document.getElementById("option-selector-list");
+const optionSelectorStatus = document.getElementById("option-selector-status");
+const optionSelectorCheckAll = document.getElementById("option-selector-check-all");
+const optionSelectorClear = document.getElementById("option-selector-clear");
+const optionSelectorApply = document.getElementById("option-selector-apply");
 
 async function initialiseGenerator() {
     try {
@@ -213,6 +224,23 @@ function createDefaultFieldState() {
     );
 }
 
+function createDefaultOptionPoolState() {
+    return Object.fromEntries(
+        characterFields
+            .filter(isSelectableField)
+            .map(field => [field.key, []])
+    );
+}
+
+function isSelectableField(field) {
+    if (!field || typeof field.optionsKey !== "string") {
+        return false;
+    }
+
+    const section = getSectionForField(field.key);
+    return section?.key !== "appearance";
+}
+
 function loadSavedState() {
     const savedStateText = localStorage.getItem(STORAGE_KEY);
 
@@ -265,6 +293,18 @@ function loadSavedState() {
                 ...savedState.enabledFields
             };
         }
+
+        if (
+            savedState.selectedOptionPools &&
+            typeof savedState.selectedOptionPools === "object"
+        ) {
+            selectedOptionPools = {
+                ...selectedOptionPools,
+                ...savedState.selectedOptionPools
+            };
+
+            sanitiseSelectedOptionPools();
+        }
     } catch (error) {
         console.error(
             "Could not read saved generator state:",
@@ -282,7 +322,8 @@ function saveState() {
         tone: selectedTone,
         weighting: selectedWeighting,
         enabledSections,
-        enabledFields
+        enabledFields,
+        selectedOptionPools
     };
 
     localStorage.setItem(
@@ -343,7 +384,8 @@ function getRandomFieldValue(field, previousValue = null) {
         return "Unknown";
     }
 
-    const eligibleOptions = getEligibleOptions(options);
+    const selectedOptions = getSelectedOptionPool(field, options);
+    const eligibleOptions = getEligibleOptions(selectedOptions);
 
     if (eligibleOptions.length === 0) {
         return "Unknown";
@@ -353,6 +395,44 @@ function getRandomFieldValue(field, previousValue = null) {
         eligibleOptions,
         previousValue
     );
+}
+
+function getSelectedOptionPool(field, options) {
+    if (!isSelectableField(field)) {
+        return options;
+    }
+
+    const selectedTexts = selectedOptionPools[field.key];
+
+    if (!Array.isArray(selectedTexts) || selectedTexts.length === 0) {
+        return options;
+    }
+
+    const selectedSet = new Set(selectedTexts);
+    const matchingOptions = options.filter(option =>
+        selectedSet.has(getOptionText(option))
+    );
+
+    return matchingOptions.length > 0
+        ? matchingOptions
+        : options;
+}
+
+function sanitiseSelectedOptionPools() {
+    for (const field of characterFields.filter(isSelectableField)) {
+        const options = characterOptions[field.optionsKey];
+        const savedSelections = selectedOptionPools[field.key];
+
+        if (!Array.isArray(options) || !Array.isArray(savedSelections)) {
+            selectedOptionPools[field.key] = [];
+            continue;
+        }
+
+        const validTexts = new Set(options.map(getOptionText));
+        selectedOptionPools[field.key] = savedSelections.filter(text =>
+            validTexts.has(text)
+        );
+    }
 }
 
 function getEligibleOptions(options) {
@@ -412,13 +492,19 @@ function generateBackground(previousValue = null) {
         return "Unknown";
     }
 
-    const availableBackgrounds = backgrounds.filter(
+    const field = fieldMap.get("background");
+    const selectedBackgrounds = getSelectedOptionPool(
+        field,
+        backgrounds
+    );
+
+    const availableBackgrounds = selectedBackgrounds.filter(
         background => background !== previousValue
     );
 
     const pool = availableBackgrounds.length > 0
         ? availableBackgrounds
-        : backgrounds;
+        : selectedBackgrounds;
 
     if (selectedWeighting === "random") {
         return pool[Math.floor(Math.random() * pool.length)];
@@ -908,6 +994,12 @@ function resetEverything() {
     selectedWeighting = "half";
     enabledSections = createDefaultSectionState();
     enabledFields = createDefaultFieldState();
+    selectedOptionPools = createDefaultOptionPoolState();
+    activeSelectorFieldKey = null;
+
+    if (optionSelectorDialog?.open) {
+        optionSelectorDialog.close();
+    }
 
     toneSelect.value = selectedTone;
     weightingSelect.value = selectedWeighting;
@@ -1081,9 +1173,16 @@ function createCharacterEntry(field) {
     const buttonContainer = document.createElement("div");
     buttonContainer.className = "field-buttons";
 
+    const selectButton = isSelectableField(field)
+        ? createSelectButton(field)
+        : null;
     const rerollButton = createRerollButton(field, isLocked);
     const lockButton = createLockButton(field, isLocked);
     const hideButton = createHideButton(field);
+
+    if (selectButton) {
+        buttonContainer.append(selectButton);
+    }
 
     buttonContainer.append(
         rerollButton,
@@ -1095,6 +1194,229 @@ function createCharacterEntry(field) {
     entry.append(labelElement, contentElement);
 
     return entry;
+}
+
+function createSelectButton(field) {
+    const button = document.createElement("button");
+    const selectedCount = getSelectedOptionCount(field.key);
+
+    button.className = "field-button select-options-button";
+    button.type = "button";
+    button.textContent = selectedCount > 0
+        ? `Selected ${selectedCount}`
+        : "Select";
+    button.classList.toggle("has-selection", selectedCount > 0);
+
+    button.title = selectedCount > 0
+        ? `Change the allowed ${getFieldLabel(field)} options`
+        : `Choose allowed ${getFieldLabel(field)} options`;
+
+    button.setAttribute("aria-label", button.title);
+
+    button.addEventListener("click", () => {
+        openOptionSelector(field.key);
+    });
+
+    return button;
+}
+
+function getSelectedOptionCount(fieldKey) {
+    const selected = selectedOptionPools[fieldKey];
+    return Array.isArray(selected) ? selected.length : 0;
+}
+
+function openOptionSelector(fieldKey) {
+    const field = fieldMap.get(fieldKey);
+
+    if (!isSelectableField(field) || !optionSelectorDialog) {
+        return;
+    }
+
+    const options = characterOptions[field.optionsKey];
+
+    if (!Array.isArray(options) || options.length === 0) {
+        showStatus(`No selectable options found for ${getFieldLabel(field)}.`);
+        return;
+    }
+
+    activeSelectorFieldKey = fieldKey;
+    selectorDraftSelections = new Set(
+        selectedOptionPools[field.key] ?? []
+    );
+    optionSelectorTitle.textContent = `Select ${getFieldLabel(field)}`;
+    optionSelectorSearch.value = "";
+
+    renderOptionSelectorList();
+    updateOptionSelectorStatus();
+
+    if (typeof optionSelectorDialog.showModal === "function") {
+        optionSelectorDialog.showModal();
+    } else {
+        optionSelectorDialog.setAttribute("open", "");
+    }
+
+    window.setTimeout(() => {
+        optionSelectorSearch.focus();
+    }, 0);
+}
+
+function renderOptionSelectorList() {
+    const field = fieldMap.get(activeSelectorFieldKey);
+
+    if (!isSelectableField(field)) {
+        optionSelectorList.replaceChildren();
+        return;
+    }
+
+    const options = characterOptions[field.optionsKey] ?? [];
+    const searchTerm = optionSelectorSearch.value
+        .trim()
+        .toLocaleLowerCase();
+
+    optionSelectorList.replaceChildren();
+
+    const matchingOptions = options.filter(option =>
+        getOptionText(option)
+            .toLocaleLowerCase()
+            .includes(searchTerm)
+    );
+
+    if (matchingOptions.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "option-selector-empty";
+        empty.textContent = "No options match that search.";
+        optionSelectorList.append(empty);
+        return;
+    }
+
+    for (const option of matchingOptions) {
+        const optionText = getOptionText(option);
+        const label = document.createElement("label");
+        label.className = "option-selector-item";
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = optionText;
+        checkbox.checked = selectorDraftSelections.has(optionText);
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+                selectorDraftSelections.add(optionText);
+            } else {
+                selectorDraftSelections.delete(optionText);
+            }
+
+            updateOptionSelectorStatus();
+        });
+
+        const text = document.createElement("span");
+        text.textContent = optionText;
+
+        label.append(checkbox, text);
+        optionSelectorList.append(label);
+    }
+}
+
+function getSelectorCheckboxes() {
+    return [
+        ...optionSelectorList.querySelectorAll(
+            'input[type="checkbox"]'
+        )
+    ];
+}
+
+function getDraftSelectedOptionTexts() {
+    const field = fieldMap.get(activeSelectorFieldKey);
+
+    if (!isSelectableField(field)) {
+        return [];
+    }
+
+    const options = characterOptions[field.optionsKey] ?? [];
+
+    return options
+        .map(getOptionText)
+        .filter(text => selectorDraftSelections.has(text));
+}
+
+function updateOptionSelectorStatus() {
+    const field = fieldMap.get(activeSelectorFieldKey);
+
+    if (!isSelectableField(field)) {
+        optionSelectorStatus.textContent = "";
+        return;
+    }
+
+    const totalCount = characterOptions[field.optionsKey]?.length ?? 0;
+    const selectedCount = getDraftSelectedOptionTexts().length;
+
+    optionSelectorStatus.textContent = selectedCount === 0
+        ? `No options selected: all ${totalCount} options can be rolled.`
+        : `${selectedCount} of ${totalCount} options selected.`;
+}
+
+function setVisibleSelectorCheckboxes(checked) {
+    for (const checkbox of getSelectorCheckboxes()) {
+        checkbox.checked = checked;
+
+        if (checked) {
+            selectorDraftSelections.add(checkbox.value);
+        } else {
+            selectorDraftSelections.delete(checkbox.value);
+        }
+    }
+
+    updateOptionSelectorStatus();
+}
+
+function applyOptionSelection() {
+    const field = fieldMap.get(activeSelectorFieldKey);
+
+    if (!isSelectableField(field)) {
+        return;
+    }
+
+    const selectedTexts = getDraftSelectedOptionTexts();
+    const currentValue = currentCharacter[field.key];
+    const currentValueIsAllowed =
+        selectedTexts.length === 0 ||
+        selectedTexts.includes(currentValue);
+    const isLocked = lockedFields.has(field.key);
+
+    selectedOptionPools[field.key] = selectedTexts;
+
+    if (!isLocked && (!currentValue || !currentValueIsAllowed)) {
+        currentCharacter[field.key] = generateField(
+            field.key,
+            currentValue
+        );
+    }
+
+    saveState();
+    renderCharacter();
+    updateSummary();
+
+    if (optionSelectorDialog.open) {
+        optionSelectorDialog.close();
+    } else {
+        optionSelectorDialog.removeAttribute("open");
+    }
+
+    const label = getFieldLabel(field);
+
+    const lockNote = isLocked && !currentValueIsAllowed
+        ? " The current locked result will stay until you unlock it."
+        : "";
+
+    showStatus(
+        (
+            selectedTexts.length === 0
+                ? `${label} uses all available options.`
+                : `${label} limited to ${selectedTexts.length} selected option${selectedTexts.length === 1 ? "" : "s"}.`
+        ) + lockNote
+    );
+
+    activeSelectorFieldKey = null;
+    selectorDraftSelections = new Set();
 }
 
 function createRerollButton(field, isLocked) {
@@ -1427,6 +1749,32 @@ weightingSelect.addEventListener("change", event => {
             event.target.selectedIndex
         ].text}.`
     );
+});
+
+optionSelectorSearch?.addEventListener("input", () => {
+    renderOptionSelectorList();
+    updateOptionSelectorStatus();
+});
+
+optionSelectorCheckAll?.addEventListener("click", () => {
+    setVisibleSelectorCheckboxes(true);
+});
+
+optionSelectorClear?.addEventListener("click", () => {
+    setVisibleSelectorCheckboxes(false);
+});
+
+optionSelectorApply?.addEventListener("click", applyOptionSelection);
+
+optionSelectorDialog?.addEventListener("click", event => {
+    if (event.target === optionSelectorDialog) {
+        optionSelectorDialog.close();
+    }
+});
+
+optionSelectorDialog?.addEventListener("close", () => {
+    activeSelectorFieldKey = null;
+    selectorDraftSelections = new Set();
 });
 
 initialiseGenerator();
