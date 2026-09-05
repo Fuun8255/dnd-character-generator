@@ -1,4 +1,4 @@
-{
+        {
     "species": [
         "Aarakocra",
         "Aasimar",
@@ -160,6 +160,7 @@
         "Monk: Way of the Kensei",
         "Monk: Way of the Long Death",
         "Monk: Way of the Sun Soul",
+        "Monk: Warrior of the Mystic Arts",
         "Paladin: Oath of Conquest",
         "Paladin: Oath of Devotion",
         "Paladin: Oath of Glory",
@@ -208,6 +209,7 @@
         "Warlock: The Hexblade",
         "Warlock: The Undying",
         "Warlock: Undead Patron",
+        "Warlock: Vestige Patron",
         "Wizard: Abjurer",
         "Wizard: Bladesinger",
         "Wizard: Chronurgy Magic",
@@ -216,10 +218,10 @@
         "Wizard: Graviturgy Magic",
         "Wizard: Illusionist",
         "Wizard: Order of Scribes",
-        "Wizard: School of Conjuration",
-        "Wizard: School of Enchantment",
-        "Wizard: School of Necromancy",
-        "Wizard: School of Transmutation",
+        "Wizard: Conjurer",
+        "Wizard: Enchanter",
+        "Wizard: Necromancer",
+        "Wizard: Transmuter",
         "Wizard: War Magic",
         "Artificer: Alchemist",
         "Artificer: Armorer",
@@ -289,7 +291,17 @@
         "Vampire Survivor",
         "Lorwyn Expert",
         "Shadowmoor Expert",
-        "Pact Seeker"
+        "Pact Seeker",
+        "Agent of the Ninth Quill",
+        "Bejeweled Conclave Spy",
+        "Cosmic Dawn Experiment",
+        "Covenant of the Grave Recruit",
+        "Crucible Storm Chaser",
+        "Familiar Trainer",
+        "Horizon Weaver Initiate",
+        "Phantasmic Circus Trouper",
+        "Seer Apprentice",
+        "Ward of the Sheltering Hands"
     ],
     "previousJobs": [
         {
@@ -3951,6 +3963,56 @@
         "Pact Seeker": [
             "Constitution",
             "Intelligence",
+            "Charisma"
+        ],
+        "Agent of the Ninth Quill": [
+            "Dexterity",
+            "Intelligence",
+            "Charisma"
+        ],
+        "Bejeweled Conclave Spy": [
+            "Dexterity",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Cosmic Dawn Experiment": [
+            "Strength",
+            "Dexterity",
+            "Constitution"
+        ],
+        "Covenant of the Grave Recruit": [
+            "Strength",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Crucible Storm Chaser": [
+            "Strength",
+            "Constitution",
+            "Intelligence"
+        ],
+        "Familiar Trainer": [
+            "Constitution",
+            "Intelligence",
+            "Wisdom"
+        ],
+        "Horizon Weaver Initiate": [
+            "Dexterity",
+            "Constitution",
+            "Wisdom"
+        ],
+        "Phantasmic Circus Trouper": [
+            "Dexterity",
+            "Constitution",
+            "Charisma"
+        ],
+        "Seer Apprentice": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+        ],
+        "Ward of the Sheltering Hands": [
+            "Constitution",
+            "Wisdom",
             "Charisma"
         ]
     },
